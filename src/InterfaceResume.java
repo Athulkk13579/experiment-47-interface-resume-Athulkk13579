@@ -22,17 +22,17 @@ class Teacher implements Resume {
     }
 }
 
-public class Main {
+public class InterfaceResume {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        String name = scanner.nextLine();
-        String qualification = scanner.nextLine();
-        int experience = scanner.nextInt();
+        String name = sc.nextLine();
+        String qual = sc.nextLine();
+        int exp = sc.nextInt();
 
-        Teacher teacher = new Teacher(name, qualification, experience);
-        teacher.biodata();
-        
-        scanner.close();
+        Teacher t = new Teacher(name, qual, exp);
+        t.biodata();
+
+        sc.close();
     }
 }
